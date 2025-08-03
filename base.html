@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PawHaven</title>
+</head>
+<body>
+  <header>
+    <h1>PawHaven 🐾</h1>
+    <nav>
+      <a href="{{ url_for('home') }}">Home</a> |
+      <a href="{{ url_for('login') }}">Login</a> |
+      <a href="{{ url_for('signup') }}">Signup</a> |
+      <a href="{{ url_for('dashboard') }}">Dashboard</a> |
+      <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+  </header>
+
+  {% block content %}{% endblock %}
+
+  <footer>
+    <div style="margin-top: 30px; padding: 15px; background: #eee;">
+      <h3>Contact Us</h3>
+      <p><a href="https://wa.me/237652343391" target="_blank">💬 WhatsApp</a></p>
+      <p><a href="mailto:trustedpupnest@gmail.com">✉️ trustedpupnest@gmail.com</a></p>
+      <p><a href="https://www.facebook.com/share/1Auv6L9KAp/?mibextid=wwXIfr" target="_blank">📘 Facebook Page</a></p>
+    </div>
+  </footer>
+</body>
+</html>

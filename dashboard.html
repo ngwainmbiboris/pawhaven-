@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% block content %}
+  <h2>Dashboard</h2>
+  {% if is_admin %}
+    <p>You are logged in as <strong>Admin</strong></p>
+  {% else %}
+    <p>Welcome, shelter!</p>
+  {% endif %}
+  <form method="post" enctype="multipart/form-data">
+    Upload pet image: <input type="file" name="image"><br>
+    <button type="submit">Upload</button>
+  </form>
+{% endblock %}
